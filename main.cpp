@@ -1,7 +1,7 @@
 #include <unistd.h>
 #include <stdlib.h>
 #include <stdio.h>
-#include "log.h"
+#include "log_client.h"
 
 CLog Log1, Log2;
 

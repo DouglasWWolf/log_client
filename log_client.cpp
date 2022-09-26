@@ -6,7 +6,7 @@
 #include <stdlib.h>
 #include <stdarg.h>
 #include <string.h>
-#include "log.h"
+#include "log_client.h"
 #include "config_file.h"
 
 using namespace std;
