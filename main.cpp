@@ -4,6 +4,7 @@
 #include "log_client.h"
 
 CLog Log1, Log2;
+std::string mytag = "hellooooo";
 
 int main()
 {
@@ -15,12 +16,12 @@ int main()
     printf("%d %d %d %d\n", x1, x2, x3, x4);
 
     int i;
-    Log1.init(5000);
-    Log2.init(5001);
+    Log1.init(5000, "Log1");
+    Log2.init(5000, "Log2");
 
     for (i=0; i<10; ++i)
     {
-        Log1.printf("This is log data #%d\n", i+1);
+        Log1.printf(mytag, "This is log data #%d\n", i+1);
     }
 
    for (i=0; i<10; ++i) Log2.printf("Log2 data");
