@@ -25,8 +25,8 @@ public:
     void    printf(const char* fmt, ...);
 
     // Logging API's that require an explicit tag
-    void    print(const std::string& tag, const std::string& s);
-    void    printf(const std::string& tag, const char* fmt, ...);
+    void    xprint(const std::string& tag, const std::string& s);
+    void    xprintf(const std::string& tag, const char* fmt, ...);
 
 protected:
 

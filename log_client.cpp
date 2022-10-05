@@ -27,7 +27,7 @@ bool CLog::init(int port, const string& default_tag)
 //==========================================================================================================
 void CLog::print(const string& s)
 {
-    print(m_default_tag, s);
+    xprint(m_default_tag, s);
 }
 //==========================================================================================================
 
@@ -35,7 +35,7 @@ void CLog::print(const string& s)
 //==========================================================================================================
 // print() - Logs a single string
 //==========================================================================================================
-void CLog::print(const string& tag, const string& s)
+void CLog::xprint(const string& tag, const string& s)
 {
     char buffer[1024];
 
@@ -113,7 +113,7 @@ void CLog::printf(const char* fmt, ...)
 //==========================================================================================================
 // printf() - Logs printf-style data
 //==========================================================================================================
-void CLog::printf(const string& tag, const char* fmt, ...)
+void CLog::xprintf(const string& tag, const char* fmt, ...)
 {
     char buffer[1024];
 

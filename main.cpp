@@ -21,7 +21,8 @@ int main()
 
     for (i=0; i<10; ++i)
     {
-        Log1.printf(mytag, "This is log data #%d\n", i+1);
+        Log1.printf("%s", mytag.c_str());
+        
     }
 
    for (i=0; i<10; ++i) Log2.printf("Log2 data");
